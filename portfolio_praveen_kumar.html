@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Praveen Kumar</title>
+  
+  <!-- Google Font Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: transparent;
+    }
+    header nav {
+      display: flex;
+      gap: 20px;
+    }
+    header nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #42a5f5;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      min-height: 100vh;
+    }
+    .hero .intro {
+      max-width: 50%;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff6f61, #42a5f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      color: #ccc;
+      margin: 20px 0;
+    }
+    .hero .buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero .buttons a.contact {
+      background: #42a5f5;
+      margin-right: 20px;
+    }
+    .hero .buttons a.resume {
+      background: #ff6f61;
+    }
+    .who-i-am {
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      gap: 30px;
+      background: #1e1e2f;
+    }
+    .who-i-am img {
+      border-radius: 10px;
+      max-width: 40%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .experience, .skills, .projects, .education {
+      padding: 50px;
+      background: #121212;
+    }
+    .experience h2, .skills h2, .projects h2, .education h2 {
+      font-size: 2.5rem;
+      color: #42a5f5;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .job, .project, .education-item {
+      background: #1e1e2f;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+      overflow-x: auto;
+      padding: 20px 0;
+    }
+    .skills-container .skill {
+      text-align: center;
+      background: #121212;
+      padding: 20px;
+      border-radius: 10px;
+      width: 150px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .skills-container .skill img {
+      max-width: 60%;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f0c29;
+      margin-top: 50px;
+    }
+    footer p {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header>
+<h2>Praveen Kumar</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="hero">
+<div class="intro">
+<h1>Hello,<br>This is <span>Praveen Kumar</span>,<br>I'm a Professional <span>iOS Developer</span>.</h1>
+<p>Passionate about crafting user-friendly iOS applications. Experienced in Swift, SwiftUI, and delivering elegant, efficient solutions.</p>
+<div class="buttons">
+<a href="mailto:praveenkumar@example.com" class="contact">Contact Me</a>
+<a href="resume.pdf" class="resume">Get Resume</a>
+</div>
+</div>
+</section>
+<!-- Who I Am Section -->
+<section class="who-i-am" id="about">
+<img src="7B6CC2A0-9297-430B-B0F4-46F636443A00.jpeg" alt="Praveen Kumar">
+<div class="content">
+<h2>Who I Am?</h2>
+<p>My name is Praveen Kumar. I am a professional and enthusiastic programmer with a passion for crafting efficient and user-friendly iOS applications.</p>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="experience" id="experience">
+<h2>Experience</h2>
+<div class="job">
+<h3>iOS Development Course</h3>
+<p>Greens Technology, Chennai</p>
+<span>Oct 2023 - Apr 2024</span>
+</div>
+<div class="job">
+<h3>iOS Developer</h3>
+<p>Toqsoft Technology</p>
+<span>May 2024 - Present</span>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+<h2>Skills</h2>
+<div class="skills-container">
+    <div class="skill">
+        <img src="https://img.icons8.com/color/96/000000/swift.png" alt="Swift">
+        <p>Swift</p>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/96/000000/xcode.png" alt="Xcode">
+        <p>Xcode</p>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/96/000000/firebase.png" alt="Firebase">
+        <p>Firebase</p>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/96/000000/github.png" alt="GitHub">
+        <p>GitHub</p>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/96/000000/uikit.png" alt="UIKit">
+        <p>UIKit</p>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/96/000000/postman-api.png" alt="Postman">
+        <p>Postman</p>
+    </div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+<h2>Projects</h2>
+<!-- Tip Tap -->
+<div class="project">
+<h3>Tip Tap</h3>
+<p><strong>Tools:</strong> Xcode , Google Maps API</p>
+<p><strong>Role:</strong> iOS Developer</p>
+<ul>
+<li>Restaurant Finder: Location-based search for restaurants with filtering options.</li>
+<li>Cuisine Explorer: Curated global cuisine browsing feature.</li>
+<li>Tip Calculator: Tool to calculate tips based on total bill and percentage.</li>
+</ul>
+</div>
+<!-- Natco -->
+<div class="project">
+<h3>Natco</h3>
+<p><strong>Tools:</strong> Xcode </p>
+<p><strong>Role:</strong> iOS Developer </p>
+<ul>
+<li>Product Management: Add, edit, and delete products with SKU, price, and stock levels.</li>
+<li>Sales Tracking: Record sales and update inventory in real time.</li>
+<li>Inventory Alerts: Notifications for low-stock products to ensure timely restocking.</li>
+</div>
+</section>
+<!-- Education Section -->
+<section class="education" id="education">
+<h2>Education</h2>
+<div class="education-item">
+<h3>SSLC</h3>
+<p>Bhuvana Krishna Matriculation Higher Secondary School, Kelambakkam</p>
+<span>2016 - 2017 | 83.4%</span>
+</div>
+<div class="education-item">
+<h3>HSC</h3>
+<p>Bhuvana Krishna Matriculation Higher Secondary School, Kelambakkam</p>
+<span>2018 - 2019 | 81.6%</span>
+</div>
+<div class="education-item"> <h3>B.E Computer Science and Engineering</h3> <p>Prince Dr. K. Vasudevan College of Engineering and Technology, Ponmar</p> <span>2019 - 2023 | 8.04 CGPA</span> </div>
+</section>
+<!-- Footer -->
+<footer>
+<p>© 2024 Praveen Kumar | All Rights Reserved</p>
+</footer>
+</body>
+</html>
